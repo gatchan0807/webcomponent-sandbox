@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:gatchan0807/webcomponent-sandbox.git",
   "author": "がっちゃん <yuki.dolphin.koga@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
 }
