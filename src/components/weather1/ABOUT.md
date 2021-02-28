@@ -17,3 +17,5 @@ https://nulab.com/ja/blog/cacoo/web-components/
 5. Templateの記述を `template.html` に移動
 6. Styleの記述を `style.css` に追加
     - Custom Element外の要素にも色がついてしまうので要修正
+7. Styleの記述を `template.html` 内に戻す
+    - Parcelの機能で `import style.css` とすると自動的に全ページに適用してくれる機能があり、それがCustom Element外にもスタイルを当ててしまっていた
