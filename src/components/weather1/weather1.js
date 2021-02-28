@@ -2,9 +2,18 @@ import { default as template } from "./template.html";
 
 // importする形を取ると、Parcelが自動的にグローバルに領域展開してしまうのでテンプレートリテラルで定義
 const style = `
-* {
-  color: royalblue;
-  font-weight: bold;
+button {
+  background-color: royalblue;
+  font-size: 1.3rem;
+  color: white;
+  border: 0;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 `;
 
