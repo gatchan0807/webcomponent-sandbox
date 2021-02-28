@@ -15,3 +15,5 @@ https://nulab.com/ja/blog/cacoo/web-components/
     - `attachShadow({mode: "open"})` を `super` 実行後に行い、 `this.shadowRoot.innerHTML` にテンプレート要素を入れないとSlotとして実行されない
     - `attachShadow` を行わないと、内部のDOMが親から注入しようとしたDOMにまるごと上書きされちゃってだめ❌
 5. Templateの記述を `template.html` に移動
+6. Styleの記述を `style.css` に追加
+    - Custom Element外の要素にも色がついてしまうので要修正
