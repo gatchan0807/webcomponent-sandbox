@@ -1,7 +1,10 @@
 class MyButton extends HTMLElement {
   constructor() {
       super();
-      this.innerHTML = `<button>${this.innerHTML}</button>`;
+      this.attachShadow({mode: "open"})
+      this.shadowRoot.innerHTML = `<button>
+        <slot name="label" />
+      </button>`;
   }
 }
 customElements.define("my-button", MyButton);
