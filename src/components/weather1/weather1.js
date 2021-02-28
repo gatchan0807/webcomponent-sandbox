@@ -1,9 +1,7 @@
-import { default as template } from "./template.html";
-
 class MyButton extends HTMLElement {
   constructor() {
       super();
-      this.innerHTML = template;
+      this.innerHTML = `<button>Hello</button>`;
   }
 }
 customElements.define("my-button", MyButton);
