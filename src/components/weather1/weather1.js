@@ -22,6 +22,25 @@ class MyButton extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `<style>${style}</style>${template}`;
+
+    this.weatherItem = {};
+  }
+
+  connectedCallback() {
+    const URL =
+      "https://www.jma.go.jp/bosai/forecast/data/overview_week/130000.json";
+
+    fetch(URL)
+      .then((result) => {
+        return result.json();
+      })
+      .then((json) => {
+        console.log(json);
+        const { reportDatetime: datetime, headTitle: title, text } = json;
+        console.log(datetime);
+        console.log(title);
+        console.log(text);
+      });
   }
 }
 customElements.define("my-button", MyButton);

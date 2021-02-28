@@ -19,3 +19,4 @@ https://nulab.com/ja/blog/cacoo/web-components/
     - Custom Element外の要素にも色がついてしまうので要修正
 7. Styleの記述を `template.html` 内に戻す
     - Parcelの機能で `import style.css` とすると自動的に全ページに適用してくれる機能があり、それがCustom Element外にもスタイルを当ててしまっていた
+8. `connectedCallback` メソッドを定義し、固定のURLからデータ取得をfetchで行う処理を追加
